@@ -25,7 +25,7 @@ SECRET_KEY = 'o3##n+q+ouftliwk_etcbn6vr3wvk1@c3e50(6)z&$e-+ej0sk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://djangoap.azurewebsites.net', 'localhost']
+ALLOWED_HOSTS = ['https://djangoap.azurewebsites.net']
 
 
 # Application definition
@@ -75,22 +75,10 @@ WSGI_APPLICATION = 'djangoAPP.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'watanabe@postgresqlap-postgresqldbserver',
-        'USER': 'watanabe',
-        'PASSWORD': 'Sa1234567',
-        'HOST': 'postgresqlap-postgresqldbserver.postgres.database.azure.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
