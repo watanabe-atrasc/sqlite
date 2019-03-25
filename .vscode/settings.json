@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ebc3c555-871b-4253-88ca-c3bd1275860f/resourceGroups/djangoap/providers/Microsoft.Web/sites/djangoap",
+    "appService.deploySubpath": ""
+}
