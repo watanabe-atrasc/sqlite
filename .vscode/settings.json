@@ -1,4 +1,7 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/ebc3c555-871b-4253-88ca-c3bd1275860f/resourceGroups/djangoap/providers/Microsoft.Web/sites/djangoap",
-    "appService.deploySubpath": ""
+    "appService.deploySubpath": "djangoAPP",
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/ebc3c555-871b-4253-88ca-c3bd1275860f/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/ebc3c555-871b-4253-88ca-c3bd1275860f"
 }
