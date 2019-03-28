@@ -25,8 +25,8 @@ SECRET_KEY = 'o3##n+q+ouftliwk_etcbn6vr3wvk1@c3e50(6)z&$e-+ej0sk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://djangoap.azurewebsites.net']
-#ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['https://djangoap.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'djangoAPP.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -86,7 +86,25 @@ DATABASES = {
         
     }
 }
-    
+ 
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'kinmu',
+        'USER': 'watanabe@sqlserverkinmu',
+        'PASSWORD': 'Sa123456',
+        'HOST': 'sqlserverkinmu.database.windows.net',
+        'PORT': '1433',
+
+        'OPTIONS': {
+            'driver': 'ODBC Driver 13 for SQL Server',
+        },
+    },
+}
+
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
