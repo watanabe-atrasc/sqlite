@@ -91,11 +91,11 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'kinmu',
-        'USER': 'watanabe@sqlserverkinmu',
+        'NAME': 'kinmudb',
+        'USER': 'watanabesa@kinmuserver',
         'PASSWORD': 'Sa123456',
-        'HOST': 'sqlserverkinmu.database.windows.net',
-        'PORT': '1433',
+        'HOST': 'kinmuserver.database.windows.net',
+        'PORT': '',
 
         'OPTIONS': {
             'driver': 'ODBC Driver 13 for SQL Server',

@@ -1,7 +1,6 @@
 from django.db import models
 
 class WorkData(models.Model):    
-    #id = models.AutoField(primary_key=True)
     SyainId = models.CharField(max_length=7, blank=False, null=False)
     date = models.DateField(blank=True, null=True)
     StartTime = models.DateTimeField(blank=True, null=True)
