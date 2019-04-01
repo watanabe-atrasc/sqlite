@@ -1,4 +1,3 @@
---find-links wheelhouse
 alabaster==0.7.12
 appnope==0.1.0
 asn1crypto==0.24.0

@@ -3,5 +3,6 @@
     "appService.zipIgnorePattern": [
         ".vscode{,/**}"
     ],
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "appService.defaultWebAppToDeploy": "/subscriptions/ebc3c555-871b-4253-88ca-c3bd1275860f/resourceGroups/kinmuapp/providers/Microsoft.Web/sites/kinmu"
 }

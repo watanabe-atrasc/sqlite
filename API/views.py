@@ -78,12 +78,16 @@ def Record(request):
 def GetInfo(request):
         
     #status = {"status":0}
-        
+
+    '''   
     if (request.method == 'GET'):
 
         SyainId = request.GET['id']
 
         return HttpResponse(serializers.serialize('json', WorkData.objects.filter(SyainId__startswith=SyainId)))
+    '''
+
+    return HttpResponse('Hello, World !!')
 
 def Correct(request):
     try:
