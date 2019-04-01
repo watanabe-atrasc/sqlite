@@ -101,8 +101,8 @@ DATABASES = {
         },
     },
 }
-'''
 
+'''
 
 
 # Password validation
