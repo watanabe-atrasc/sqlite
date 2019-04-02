@@ -8,7 +8,7 @@ import datetime
 
 def Login(request):
     try:
-        
+
         status = {"status":0}
         
         if (request.method == 'GET'):
